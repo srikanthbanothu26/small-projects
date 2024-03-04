@@ -3,8 +3,8 @@ import datetime
 import requests
 
 city = "vijayawada" 
-url = f"http://api.weatherapi.com/v1/current.json?key=f295a68795214493ab660007231812&q={city}&aqi=no"
-api_key="f295a68795214493ab660007231812" 
+your_ap_key=""
+url = f"http://api.weatherapi.com/v1/current.json?key={your_ap_key}&q={city}&aqi=no" 
 conn =sqlite3.connect("weather.db")
 cursor=conn.cursor()
 cursor=conn.cursor()

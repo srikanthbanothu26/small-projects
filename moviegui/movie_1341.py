@@ -34,7 +34,7 @@ cursor.execute(create_table)
 
 def api_search(movie_name):
     movie_data.delete(1.0, "end")
-    api_key = "28f9e296"
+    api_key = "your api key"
     url = f"http://www.omdbapi.com/?t={movie_name}&apikey={api_key}"
     resp = requests.get(url)
     data = resp.json()
